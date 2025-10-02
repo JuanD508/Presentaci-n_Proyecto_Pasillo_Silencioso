@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detector de Gritos con ESP32</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="fade-in">
+    <h1>Detector de Gritos con ESP32</h1>
+    <p class="subtitulo">Un proyecto IoT para mejorar la convivencia escolar</p>
+  </header>
+
+  <!-- Introducción -->
+  <section class="intro slide-up">
+    <h2>🌟 Introducción</h2>
+    <p>
+      En algunos colegios, los pasillos pueden generar mucho ruido por los gritos de los estudiantes,
+      lo que interrumpe las clases y dificulta el aprendizaje. Este proyecto propone una solución
+      tecnológica con <b>ESP32</b>, sensores y retroalimentación visual/auditiva para controlar el ruido.
+    </p>
+  </section>
+
+  <!-- Componentes -->
+  <section class="componentes fade-in">
+    <h2>🔧 Componentes utilizados</h2>
+    <ul>
+      <li>ESP32 Dev Kit</li>
+      <li>Sensor de micrófono (nivel de sonido)</li>
+      <li>Sensor PIR (detección de movimiento)</li>
+      <li>Pantalla LCD 16x2 con I2C</li>
+      <li>3 LEDs (rojo, amarillo y verde) con resistencias de 220Ω</li>
+      <li>Módulo ISD1820 + altavoz</li>
+      <li>Protoboard y cables Dupont</li>
+    </ul>
+  </section>
+
+  <!-- Funcionamiento -->
+  <section class="funcionamiento slide-up">
+    <h2>⚙️ Funcionamiento</h2>
+    <div class="card">
+      <p><span class="led verde"></span> LED Verde → ruido bajo.</p>
+      <p><span class="led amarillo"></span> LED Amarillo → ruido moderado.</p>
+      <p><span class="led rojo"></span> LED Rojo → ruido alto (grito). Activa el <b>ISD1820</b>.</p>
+      <p>El <b>PIR</b> detecta movimiento y lo muestra en la LCD.</p>
+      <p>El <b>ESP32</b> cuenta los gritos y los guarda en una página web.</p>
+    </div>
+  </section>
+
+  <!-- Resultados -->
+  <section class="resultados fade-in">
+    <h2>📊 Resultados</h2>
+    <p>
+      El sistema permite identificar en tiempo real el nivel de ruido y contabilizar los gritos
+      diarios. Esta información se muestra tanto en la <b>pantalla LCD</b> como en una
+      <b>página web</b> accesible por WiFi.
+    </p>
+  </section>
+
+  <!-- Conclusión -->
+  <section class="conclusion slide-up">
+    <h2>✅ Conclusión</h2>
+    <p>
+      El proyecto combina <b>IoT</b>, <b>sensores</b> y <b>señales visuales/auditivas</b> 
+      para mejorar la convivencia en espacios escolares, fomentando ambientes más tranquilos
+      y propicios para el aprendizaje.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="fade-in">
+    <p>📌 Proyecto desarrollado con ESP32 | 
+      <a href="https://github.com/" target="_blank">Repositorio en GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
